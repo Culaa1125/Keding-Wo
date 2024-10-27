@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Keding - Contact Us</title>
+</head>
+<body>
+  <!-- Header Start-->
+  <header class="bg-transparent relative top-0 left-0 w-full flex items-center z-10 shadow-md">
+    <div class="container max-w-full mx-auto">
+        <div class="flex items-center justify-between relative w-full">
+            <div class="px-4 lg:px-10">
+                <a href="index.html" class="font-greatvibe text-4xl font-bold block py-6 text-pink-500">Keding</a>
+            </div>
+            <div class="flex items-center px-4 lg:px-10">
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-pink-500">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="about.html" class="text-base text-black py-2 mx-8 flex group-hover:text-pink-500">About</a>
+                        </li>
+                        <li class="group">
+                            <a href="services.html" class="text-base text-black py-2 mx-8 flex group-hover:text-pink-500">Services</a>
+                        </li>
+                        <li class="group">
+                            <a href="contact.html" class="text-base text-black py-2 mx-8 flex group-hover:text-pink-500">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- Header End-->
+
+  <!-- MAIN CONTENT START-->
+  <div class="flex w-full min-h-screen justify-center items-center mb-6">
+    <div class="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-pink-500 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
+      <div class="md:flex w-full md:w-[500px] md:h-[500px] items-center overflow-hidden rounded-lg hidden">
+        <img src="/src/img/meledak.jpg" alt="">
+      </div>
+      <div>
+        <div class="font-mont font-bold text-2xl text-center">
+          <h1>LETS GET IN TOUCH</h1>
+        </div>
+        <div class="mb-4 font-mont font-thin text-xs text-center">
+          <h6 class="tracking-widest">& Make a Dream Wedding With Us</h6>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col space-y-4">
+          <input type="hidden" name="access_key" value="61db7e4a-09a4-4d6c-bef2-b5feccd04316">
+          <div>
+            <label for="" class="text-sm font-semibold font-mont">Name</label>
+            <input type="text" placeholder="Your Name" name="name" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
+          </div>
+          <div>
+            <label for="" class="text-sm font-semibold font-mont">Email</label>
+            <input type="email" placeholder="Your Email" name="email" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
+          </div>
+          <div>
+            <label for="" class="text-sm font-semibold font-mont">Phone Number</label>
+            <input type="text" placeholder="Your Phone Number" name="phone-number" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
+          </div>
+          <div>
+            <label for="" class="text-sm font-semibold font-mont">Message</label>
+            <textarea placeholder="Your Message" rows="4" name="message" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white"></textarea>
+          </div>
+          <button type="submit" class="inline-block self-center bg-trasparant rounded-lg text-white font-bold font-mont px-6 py-2 uppercase text-sm ring-2  ring-white hover:text-pink-500 hover:bg-white hover:ring-2 hover:ring-white hover:text-pink duration-300">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- MAIN CONTENT END-->
+
+  <!-- Footer Start-->
+  <footer class="h-full">
+    <div class="bg-pink-500 w-full h-full flex flex-wrap md:flex-col md:align-bottom">
+        <div class="container md:flex text-center md:w-1/2 md:justify-between md:px-8">
+                <div class="py-8">
+                    <h1 class="font-greatvibe text-6xl text-white">Keding</h1>
+                </div>
+                <div class="font-mont text-white pt-4 md:pt-10 md:flex md:flex-col">
+                    <h2 class="font-semibold">Follow Us on Instagram</h2>
+                    <a href="https://www.instagram.com/faisalfirdaus11" target="_blank" class="font-medium hover:text-pink-800">@faisalfirdaus11</a>
+                    <a href="https://www.instagram.com/bimaindraa_" target="_blank" class="font-medium hover:text-pink-800">@bimaindraa_</a>
+                    <a href="https://www.instagram.com/dani_gibran23" target="_blank" class="font-medium hover:text-pink-800">@dani_gibran23</a>
+                    <a href="https://www.instagram.com/im.issu" target="_blank" class="font-medium hover:text-pink-800">@im.issu</a>
+                    <a href="https://www.instagram.com/alvanzlfkr._" target="_blank" class="font-medium hover:text-pink-800">@alvanzlfkr._</a>
+                    <a href="https://www.instagram.com/yesdaniel.s" target="_blank" class="font-medium hover:text-pink-800">@yesdaniel.s</a>
+                </div>
+        </div>
+            <div class="font-mont text-white font-light px-3 md:text-end pt-6 mb-3">
+                <h2>© 2024 - 2024 www.keding.co.id - All Rights Reserved.</h2>
+            </div>
+    </div>
+</footer>
+  <!-- Footer Ends-->
+
+  <!-- JAVA SCRIPT-->
+  <script src="/src/js/index.js"></script>
+</body>
+  
