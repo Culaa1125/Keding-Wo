@@ -63,23 +63,18 @@
         <div class="mb-4 font-mont font-thin text-xs text-center">
           <h6 class="tracking-widest">& Make a Dream Wedding With Us</h6>
         </div>
-        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col space-y-4">
-          <input type="hidden" name="access_key" value="61db7e4a-09a4-4d6c-bef2-b5feccd04316">
+        <form onsubmit="sendMessage()" method="POST" class="flex flex-col space-y-4">
           <div>
-            <label for="" class="text-sm font-semibold font-mont">Name</label>
-            <input type="text" placeholder="Your Name" name="name" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
+            <label for="name" class="text-sm font-semibold font-mont">Name</label>
+            <input type="text" placeholder="Your Name" id="name" required class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
           </div>
           <div>
-            <label for="" class="text-sm font-semibold font-mont">Email</label>
-            <input type="email" placeholder="Your Email" name="email" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
+            <label for="email" class="text-sm font-semibold font-mont">Email</label>
+            <input type="email" placeholder="Your Email" id="email" required class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
           </div>
           <div>
-            <label for="" class="text-sm font-semibold font-mont">Phone Number</label>
-            <input type="text" inputmode="numeric" placeholder="Your Phone Number" name="phone-number" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white">
-          </div>
-          <div>
-            <label for="" class="text-sm font-semibold font-mont">Message</label>
-            <textarea placeholder="Your Message" rows="4" name="message" class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white"></textarea>
+            <label for="message" class="text-sm font-semibold font-mont">Message</label>
+            <textarea placeholder="Your Message" rows="4" id="message" required class="ring-1 ring-white placeholder:font-mont placeholder:font-thin w-full rounded-md px-4 py-2 mt-1 outline-none focus:ring-2 focus:ring-white bg-transparent placeholder-white"></textarea>
           </div>
           <button type="submit" class="inline-block self-center bg-trasparant rounded-lg text-white font-bold font-mont px-6 py-2 uppercase text-sm ring-2  ring-white hover:text-pink-500 hover:bg-white hover:ring-2 hover:ring-white hover:text-pink duration-300">Submit</button>
         </form>
@@ -114,5 +109,16 @@
 
   <!-- JAVA SCRIPT-->
   <script src="src/js/index.js"></script>
+  <script>
+    function sendMessage() {
+      const name = document.getElementById('name').value;
+      const name = document.getElementById('email').value;
+      const name = document.getElementById('message').value;
+
+      const url = "https://api.whatsapp.com/send?phone=6285156389541&text=Halo%20Min.%0ASaya%20*"+ name +"*%0AEmail%20Saya%20*"+ email +"*%0A%0A*"+ message +"*";
+
+      window.open(url);
+    }
+  </script>
 </body>
   
